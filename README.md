@@ -4,12 +4,12 @@ Just some Patch for HawnHan
 
 部分内容极度正义，若不想要则根据下方描述删除对应文件/文件夹即可(不删除对游戏也不会有影响，若因补丁报错找我维护即可)
 
-[B]LWM's Deep Storage[/B]是我必不可少的Mod，以下大部分补丁都需要该Mod。在正常情况下（就是我没昏头的情况下），你即便不使用[B]LWM's Deep Storage[/B]应当也不会造成报错，补丁会默认不生效而已。
+LWM's Deep Storage是我必不可少的Mod，以下大部分补丁都需要该Mod。在正常情况下（就是我没昏头的情况下），你即便不使用LWM's Deep Storage应当也不会造成报错，补丁会默认不生效而已。
 
 所有的贴图都是抄Small Shelf/LWM's Deep Storage/Simple Utilities: Fridge，因此请注意，部分物品在没有这些Mod的情况下可能会贴图错误,而且我这个人很懒，只要能用，贴图丑不丑，合不合适都无所谓
 
 以下是对该补丁中各个文件所起作用的描述：
-[B]Def文件夹：[/B]
+Def文件夹：
 - AdditionDeepStorage:
  （该部分极度正义，为了能说服我自己，稍微增加了一点耗材）
  1、增加可存储80个雕像的雕像柜
@@ -24,10 +24,10 @@ Just some Patch for HawnHan
  10、增加可存储75个特性释放器及记忆棒的特性记忆储柜
  11、增加可存储100本书/地图的深度书架（兼容TechSales及Vanilla Books Expanded）
  12、增加可存储1000堆白银的量存银库(1x1)（因为正义，我太富有了，而Vanilla Trading Expanded取钱竟然需要手续费，我不接受！）
- 13、增加可存储1000堆需要冷藏物品的量存冰箱（借用[B]Simple Utilities: Fridge[/B]，同时也推荐该Mod，对性能几乎没影响）
+ 13、增加可存储1000堆需要冷藏物品的量存冰箱（借用Simple Utilities: Fridge，同时也推荐该Mod，对性能几乎没影响）
  14、增加可存储600个成瘾品的量存成瘾品库
 - Addition_ARimWorldofMagic_DragonsDescent：
- 联动[B]Dragons Descent[/B]及[B]A RimWorld of Magic[/B]，添加需要龙角才能制作的龙角弓/开天斧/秘能刃（非常正义！！！！）
+ 联动Dragons Descent及A RimWorld of Magic，添加需要龙角才能制作的龙角弓/开天斧/秘能刃（非常正义！！！！）
  1、龙角弓，提升数值/范围，移除经验值减少的Debuff
  2、开天斧，提升数值
  3、秘能刃，提升数值
@@ -38,7 +38,7 @@ Just some Patch for HawnHan
 无脑且正义到极度的地热发电器
 
 
-[B]Patch文件夹：[/B]
+Patch文件夹：
 - Patch_Addition_DeepStroge:为AdditionDeepStorage添加Netrve's DeepStorage GUI该Mod的支持。
 
 - Patch_AnderyTech：修改了 [旋风绘卷]Andery-Tech 的状态(原为2级后则无法交流，修改后可以)
