@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[基因进化药剂]Gene-adjusted agent</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--为[基因进化药剂]Gene-adjusted agent添加ZeroTech-FalseLast-Binoic支持-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="LingFPS_Blank"]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/HediffDef[@Name="LingFPSHediffBase"]/addedPartProps</xpath>
+						<value>
+							<betterThanNatural>true</betterThanNatural>
+						</value>
+					</match>
+				</li>
+				<!--为[基因进化药剂]Gene-adjusted agent添加Vanilla Genetics Expanded支持-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GR_HibernationModule"]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/HediffDef[@Name="GR_HybridPartsBase"]/addedPartProps</xpath>
+						<value>
+							<betterThanNatural>true</betterThanNatural>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

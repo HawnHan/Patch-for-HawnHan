@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DSU_DigitalStorageUnit_Building"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DSU_DigitalStorageUnit_Building"]</xpath>
+			<value>
+				<modExtensions>
+					<li MayRequire="owlchemist.fridgeutilities" Class="SimpleFridge.Fridge" />
+				</modExtensions>
+			</value>
+		</match>
+	</Operation>
+</Patch>

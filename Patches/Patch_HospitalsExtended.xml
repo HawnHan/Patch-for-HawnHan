@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Hospitals Extended</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Power++</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="IV_Nutrition_Electric" or defName="IV_Blood_Electric"]/comps</xpath>
+				<value>
+					<li Class="aRandomKiwi.PPP.CompProperties_LocalWirelessPowerReceptor">
+						<compClass>aRandomKiwi.PPP.CompLocalWirelessPowerReceptor</compClass>
+					</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+</Patch>

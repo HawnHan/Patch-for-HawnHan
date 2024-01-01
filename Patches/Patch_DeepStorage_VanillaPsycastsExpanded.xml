@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>LWM's Deep Storage</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Psycasts Expanded</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LWM_DeepStorage_Skip"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+				<value>
+					<li>VPE_Eltex</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+</Patch>

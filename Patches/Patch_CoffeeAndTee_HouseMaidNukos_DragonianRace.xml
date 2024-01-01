@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[SYR] Coffee and Tea</li>
+    </mods>
+    <match Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="MaidnukosMilk"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="Brew_SyrHotChocolate"]/ingredients/li/filter/thingDefs[li="Milk"]</xpath>
+                <value>
+                    <li>MaidnukosMilk</li>
+                </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="Brew_SyrHotChocolate"]/fixedIngredientFilter/thingDefs</xpath>
+                <value>
+                    <li>MaidnukosMilk</li>
+                </value>
+                </li>
+            </operations>
+        </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[SYR] Coffee and Tea</li>
+    </mods>
+    <match Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DragonianMilk"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="Brew_SyrHotChocolate"]/ingredients/li/filter/thingDefs[li="Milk"]</xpath>
+                <value>
+                    <li>DragonianMilk</li>
+                </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="Brew_SyrHotChocolate"]/fixedIngredientFilter/thingDefs</xpath>
+                <value>
+                    <li>DragonianMilk</li>
+                </value>
+                </li>
+            </operations>
+        </match>
+    </match>
+  </Operation>
+</Patch>

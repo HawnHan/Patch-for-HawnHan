@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HugsLib.UpdateFeatureDef Abstract="true" Name="PatchForHawnHan_UpdateFeatureBase">
+    <modNameReadable>Patch for HawnHan(HawnHan自用补丁)</modNameReadable>
+    <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2975125935</linkUrl>
+  </HugsLib.UpdateFeatureDef>
+  <HugsLib.UpdateFeatureDef ParentName="PatchForHawnHan_UpdateFeatureBase">
+    <defName>PatchForHawnHan_23_12_30</defName>
+    <assemblyVersion>23.12.30</assemblyVersion>
+    <content>
+请按需求阅读下方内容
+部分内容极度正义，若不想要则根据下方描述删除对应文件/文件夹即可(不删除对游戏也不会有影响，若因补丁报错找我维护即可)
+LWM's Deep Storage是我必不可少的Mod，大部分补丁都需要该Mod。在正常情况下，你即便不使用LWM's Deep Storage应当也不会造成报错，补丁会默认不生效而已。
+所有的贴图都是抄Small Shelf/LWM's Deep Storage/Simple Utilities: Fridge，因此请注意，部分物品在没有这些Mod的情况下可能会贴图错误,而且我这个人很懒，只要能用，贴图丑不丑，合不合适都无所谓
+
+以下为改动内容
+Def文件夹：
+- AdditionDeepStorage:
+    （该部分极度正义，为了能说服我自己，稍微增加了一点耗材）
+    1、增加可存储80个雕像的雕像柜
+    2、增加可存储3000个武器的量子武器柜（因为我非常抠门，战场上的所有东西我都要出售）
+    3、增加可存储2000个衣物的量子衣物架（理由同上）
+    4、增加可存储1000个身体部件的量子身体部件仓（身为仿生部件狂人的无奈）
+    5、增加可存储300个织物/皮革的微量子织物柜（Mod加的这类材料实在太多了）
+    6、增加可存储2000个织物/皮革的量子织物柜（理由同上）
+    7、增加可存储200个魔法物品的量子魔法储物柜(需要A RimWorld of Magic)
+    8、增加可存储100个神经训练器的神经训练器储柜（因为Vanilla Psycasts Expanded实在太疯狂了）
+    9、增加可存储60个身体部件的身体部件仓
+    10、增加可存储75个特性释放器及记忆棒的特性记忆储柜
+    11、增加可存储100本书/地图的深度书架（兼容TechSales及Vanilla Books Expanded）
+    12、增加可存储1000堆白银的量存银库(1x1)（因为正义，我太富有了，而Vanilla Trading Expanded取钱竟然需要手续费，我不接受！）
+    13、增加可存储1000堆需要冷藏物品的量存冰箱（借用Simple Utilities: Fridge，同时也推荐该Mod，对性能几乎没影响）
+    14、增加可存储600个成瘾品的量存成瘾品库
+- Addition_ARimWorldofMagic_DragonsDescent：
+    联动Dragons Descent及A RimWorld of Magic，添加需要龙角才能制作的龙角弓/开天斧/秘能刃（非常正义！！！！）
+    1、龙角弓，提升数值/范围，移除经验值减少的Debuff
+    2、开天斧，提升数值
+    3、秘能刃，提升数值
+    哦因为我懒得写龙角弓在魔法锻造台的制作清单了，所以可能龙角弓在魔法锻造台制作会非常慢，嗯，所以龙角弓不推荐在魔法锻造台制作，浪费魔力
+- AddVanillaPipeNet：
+    为满足个人需要根据Vanilla Chemfuel Expanded添加的玻璃钢泵/钢铁泵/黄金泵，效果与Vanilla Chemfuel Expanded中的沉积原液泵效果是一样的，把地底的对应材料提取出来而不需要深钻井去挖，但是请注意，我虽然也写了对应的管道运输，但是我把对应材料的排出口代码注释了，也没有对应材料的存储罐，也就是说钻取出来的材料会散落在泵的周围，推荐搭配gguake作者的Area Inclusion &amp; Exclusion一起使用，添加禁止涉足的区域，挖取完毕后再一同去搬运。效率低下，后期还是推荐人工挖取，毕竟人物是具有采矿效率增加挖矿量的。
+
+Patch文件夹：
+- Patch_Addition_DeepStroge:为AdditionDeepStorage添加Netrve's DeepStorage GUI该Mod的支持。
+- Patch_BrainImplantsAndMore(implants)!：移除闪耀AI芯片的意识上限限制，修改效果为+150%意识；修改闪耀抑睡芯片的疲劳度下降速率为23%（原版为0%）。
+- Patch_DeepStorage_VanillaPsycastsExpanded：将Vanilla Psycasts Expanded中的灵质添加到LWM's Deep Storage的废料箱存储选项中
+- Patch_DigitalStorageUnit_SimpleUtilitiesFridge：为Digital Storage Unit的数字存储单元添加源自Simple Utilities: Fridge的冷藏功能
+- Patch_ExternalEye：将ExternalEye的制作清单受普通工作速度影响
+- Patch_PhantomMaterials：将Phantom Materials制作清单添加受熔炼速度影响
+- Patch_Remedies：修改Remedies中稳态平衡液配方，增加其耗材，强化效果（非常正义！）
+- Patch_RPGStyleLevelUpMod：
+为了满足个人需要而制作的补丁，尽可能使RPG Style Level Up Mod多方面影响人物的属性
+1、将心灵敏感度/心灵熵消散率/心灵熵阈值/教化能力关联智力
+2、将挖矿效率/修剪速度/符文雕刻技能/远程闪避概率/进食速度关联灵巧
+3、将熔炼速度关联力量
+4、将补充燃料速度（需求MrHydralisk作者的Skilled Refueling）/远程暴击概率关联敏捷
+5、多提一嘴，如果需要影响切石速度，我在复合石材这个Mod里面写了补丁，就没有加在这里面（原RPG Style Level Up Mod其实也影响切石速度，搭配的是Skilled Stonecutting这个Mod，名字一定要一模一样才行）
+上述部分属性是需求Mod的，可能也不是所有都生效，大部分都是生效吧，我忘得差不多了（又懒得验证）
+- Patch_VanillaGeneticsExpanded：将Vanilla Genetics Expanded中的冬眠模块替换为植入物（但是技术不行有BUG，在安装时除启灵等级这个BUFF外所有大脑部位的植入物及buff都会消失，所以推荐先安装冬眠模块，或者不安装该模块）
+- Patch_VanillaSkillsExpanded：修改Vanilla Skills Expanded中的无兴趣学习率为0.75，同时修改偏長所影响的学习速率——0.8(该影响可在Vanilla Skills Expanded设置中更改，即时生效)，这是为了在前期跟work manager配合，不然真的太抽象了，一个该技能学习速率为0.35的但是技能为殖民地最高等级的人在work manager中不被分配工作，哈真是让人啼笑皆非，感谢Reduced VE Skills Nerf这个mod让我发现修改的方法（其实就是照抄，只是修改数值）
+- Patch_ZeroTechResearch：删除零子科技中个人未启用、无用的研究，省心省力
+
+新版本已移除的Patch：
+- Patch_Addition_DeepStroge：将游戏手术成功率的上限修改为100%（该补丁照抄了 更改原版手术成功率上限(Patches) ）  移除，使用Gege作者的Better Surgery代替
+- Patch_DeepStorage_Statue：为 LWM's Deep Storage深度储存 新增了一个只能存储雕像的单格储物箱 移除，移动到Defs文件夹的AdditionDeepStorage中
+- Patch_DeepStorage_ZeroTechAbility：在检测到 ZeroTech-Ability零子科技-仿生拓展包 时为 LWM's Deep Storage深度储存 新增名为 训练器储柜 的建筑，用于存放神经训练器 移除，移动到Defs文件夹的AdditionDeepStorage中
+- Patch_DeepStorage_ZeroTechFalseLastBionic：为 LWM's Deep Storage深度储存 新增一个名为 身体部件仓 的建筑，用于存放 身体部件 移除，移动到Defs文件夹的AdditionDeepStorage中
+- Patch_Dragonian_WeaponAndApparel：解禁 Dragonian Race龙娘 的衣物及武器限制（旧版，新版未适配，推荐删除，默认不生效，若要生效请为文件添加".xml"后缀，因为我个人目前并没有在使用该Mod） 默认不生效
+- Patch_PokemonRim_Charizard：将 [O21] Pokemon Rim边缘宝可梦 的 喷火龙 修改为驮运动物(贴图会出错，但我不在意) 移除，个人不再需要
+- Patch_RimFridge_DeepStorage：为 LWM's Deep Storage深度储存 新增一个 深度储存小冰箱 的储物箱 移除，使用Simple Utilities: Fridge取代
+- Patch_TechSale_DeepStorage：为 LWM's Deep Storage深度储存 新增一个能存放 TechSales科技销售 书籍的储物箱 移除，移动到Defs文件夹的AdditionDeepStorage中
+- Patch_VFE_DeepStorage：为 Vanilla Furniture Expanded原版家具拓展 添加一个 量存货架(1x1) 的储物箱 移除，移动到Defs文件夹的AdditionDeepStorage中
+
+Patch命名规则：Patch_前置Mod(_联动前置Mod)
+PS：LWM's Deep Storage我会永远搭配Netrve's DeepStorage GUI使用
+	</content>
+  </HugsLib.UpdateFeatureDef>
+	<HugsLib.UpdateFeatureDef ParentName="PatchForHawnHan_UpdateFeatureBase">
+		<defName>PatchForHawnHan_23_12_31</defName>
+		<assemblyVersion>23.12.31</assemblyVersion>
+		<content>
+			新增：Patch_MasterOfCrafting：修复leafzxg作者的Master of Crafting（批量制作）的用木材批量制作化合燃料收普通工作速度关联
+			应该所有Patch都使用了条件关联，即便无该Mod也不会报错。若出现红字，请留言告知修复。
+		</content>
+	</HugsLib.UpdateFeatureDef>
+	<HugsLib.UpdateFeatureDef ParentName="PatchForHawnHan_UpdateFeatureBase">
+		<defName>PatchForHawnHan_24_1_1</defName>
+		<assemblyVersion>24.1.1</assemblyVersion>
+		<content>
+			新增：Patch_GeneAdjustAgent：为[基因进化药剂]Gene-adjusted agent添加ZeroTech-FalseLast-Binoic及Vanilla Genetics Expanded支持
+			修复：Patch_HKJ_ReinforcedWalls现在会在两个Mod同时激活的时候再启用
+			应该所有Patch都使用了条件关联，即便无该Mod也不会报错。若出现红字，请留言告知修复。
+		</content>
+	</HugsLib.UpdateFeatureDef>
+</Defs>

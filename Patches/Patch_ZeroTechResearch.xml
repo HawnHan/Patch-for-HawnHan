@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--删除零子科技中未启用、无用的研究，省心省力-->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="ZeroTechClear" or defName="ZeroTechFlareGun" or defName="ZeroTechFlareGunEX" or defName="ZeroTechDrugs" or defName="ZeroTechMeals" or defName="ZeroTechBodyPart" or defName="ZeroTechImpantMaker" or defName="ZeroTechAdv" or defName="ZeroTechLongRandPower" or defName="ZeroTechThinkingPower" or defName="ZeroTechDenfence" or defName="ZeroTechTurret" or defName="ZeroTechTruePast" or defName="ZeroTechPuppetDie" or defName="ZeroTechBaseC" or defName="ZeroTechBaseCI" or defName="ZeroTechBaseCII" or defName="ZeroTechBaseCIII" or defName="ZeroTechBaseCIV" or defName="ZeroTechBaseCV" or defName="ZeroTechBaseCVI" or defName="ZeroTechBaseCE" or defName="ZeroTechBaseCEI" or defName="ZeroTechBaseCEII" or defName="ZeroTechBaseCEIII" or defName="ZeroTechBaseCEIV" or defName="ZeroTechBaseCEV" or defName="ZeroTechBaseCEVI" or defName="ZeroTechBaseCEVII" or defName="ZeroTechBaseCEE"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

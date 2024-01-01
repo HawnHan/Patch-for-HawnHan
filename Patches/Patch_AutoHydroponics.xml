@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+	  <xpath>Defs/ThingDef[defName="AutoHydroponicsBasin"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <ThingDef ParentName="BuildingBase">
+          <defName>HawnHan_AutoHydroponicsBasin</defName>
+          <label>强力型自动水培仓</label>
+          <description>680%的速度！杀无赦！</description>
+          <thingClass>AutoPonics.Building_AutoPlantGrower</thingClass>
+          <graphicData>
+            <texPath>Things/Buildings/AutoPlantGrower</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(1,4)</drawSize>
+            <damageData>
+              <cornerTL>Damage/Corner</cornerTL>
+              <cornerTR>Damage/Corner</cornerTR>
+              <cornerBL>Damage/Corner</cornerBL>
+              <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+          </graphicData>
+          <castEdgeShadows>true</castEdgeShadows>
+          <altitudeLayer>FloorEmplacement</altitudeLayer>
+          <defaultPlacingRot>East</defaultPlacingRot>
+          <passability>PassThroughOnly</passability>
+          <pathCost>60</pathCost>
+          <constructEffect>ConstructMetal</constructEffect>
+          <fillPercent>0.30</fillPercent>
+          <canOverlapZones>false</canOverlapZones>
+          <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+          <statBases>
+            <WorkToBuild>6400</WorkToBuild>
+            <MaxHitPoints>230</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+            <Cleanliness>-3</Cleanliness>
+          </statBases>
+          <size>(1,4)</size>
+          <costList>
+            <Steel>180</Steel>
+            <Plasteel>20</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+          </costList>
+          <fertility>6.8</fertility>
+          <building>
+            <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+            <sowTag>Hydroponic</sowTag>
+          </building>
+          <tickerType>Rare</tickerType>
+          <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Power">
+              <compClass>CompPowerTrader</compClass>
+              <basePowerConsumption>280</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+          </comps>
+          <researchPrerequisites>
+            <li>Hydroponics</li>
+            <li>Fabrication</li>
+          </researchPrerequisites>
+          <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+          <designationCategory>Production</designationCategory>
+        </ThingDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Power++</li>
+    </mods>
+    <match Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="HawnHan_AutoHydroponicsBasin"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="HawnHan_AutoHydroponicsBasin"]/comps</xpath>
+        <value>
+          <li Class="aRandomKiwi.PPP.CompProperties_LocalWirelessPowerReceptor">
+            <compClass>aRandomKiwi.PPP.CompLocalWirelessPowerReceptor</compClass>
+          </li>
+        </value>
+      </match>
+    </match>
+  </Operation>
+</Patch>

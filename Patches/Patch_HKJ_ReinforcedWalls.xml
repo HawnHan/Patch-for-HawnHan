@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>黑科技</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="ReinforcedWall"]</xpath>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="NEC_ReinforcedWall">
+								<defName>NEC_ReinforcedAutoRepairWall</defName>
+								<label>强化纳米再生墙</label>
+								<description>黑科技与强化墙(Reinforced Wall)的衍生物，具有自我修复功能</description>
+								<tickerType>Normal</tickerType>
+								<costList>
+									<Steel>20</Steel>
+									<Plasteel>5</Plasteel>
+									<ComponentIndustrial>2</ComponentIndustrial>
+								</costList>
+								<comps>
+									<li Class="CompProperties_Power">
+										<compClass>CompPowerTrader</compClass>
+										<basePowerConsumption>20</basePowerConsumption>
+										<shortCircuitInRain>false</shortCircuitInRain>
+									</li>
+									<li>
+										<compClass>HKJ_CompRepairSelf_Needpower</compClass>
+									</li>
+								</comps>
+								<researchPrerequisites>
+									<li>NamiBasics</li>
+									<li>ResearchReinforcedWalls</li>
+								</researchPrerequisites>
+								<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+							</ThingDef>
+						</value>
+					</li>
+					<li Class="PatchOperationTest">
+						<xpath>Defs/ThingDef[defName="ARKPPP_LocalWirelessPowerEmitter"]</xpath>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="NEC_ReinforcedAutoRepairWall"]/comps</xpath>
+						<value>
+							<li Class="aRandomKiwi.PPP.CompProperties_LocalWirelessPowerReceptor">
+								<compClass>aRandomKiwi.PPP.CompLocalWirelessPowerReceptor</compClass>
+							</li>
+						</value>
+					</li>
+				</operations>
+			</match>
+		</match>
+	</Operation>
+</Patch>

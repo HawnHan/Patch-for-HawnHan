@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>LWM's Deep Storage</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VFE_MechanoidLiquidFreezer"]</xpath>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="VFE_MechanoidLiquidFreezer"]/comps/li[@Class="LWM.DeepStorage.Properties"]</xpath>
+						<nomatch Class="PatchOperationSequence">
+							<operations>
+								<li Class="PatchOperationAdd">
+									<xpath>Defs/ThingDef[defName="VFE_MechanoidLiquidFreezer"]/comps</xpath>
+									<value>
+										<li Class="LWM.DeepStorage.Properties">
+											<maxNumberStacks>20</maxNumberStacks>
+											<minTimeStoringTakes>50</minTimeStoringTakes>
+											<additionalTimeEachStack>150</additionalTimeEachStack>
+											<additionalTimeStackSize>10</additionalTimeStackSize>
+											<maxMassOfStoredItem>75</maxMassOfStoredItem>
+											<maxTotalMass>1500</maxTotalMass>
+											<showContents>true</showContents>
+											<overlayType>None</overlayType>
+										</li>
+									</value>
+								</li>
+								<li Class="PatchOperationAttributeSet">
+									<xpath>Defs/ThingDef[defName="VFE_MechanoidLiquidFreezer"]</xpath>
+									<attribute>ParentName</attribute>
+									<value>LWM_DeepStorage</value>
+								</li>
+							</operations>
+						</nomatch>
+						<match Class="PatchOperationSequence">
+							<operations>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ThingDef[defName="VFE_MechanoidLiquidFreezer"]/comps/li[@Class="LWM.DeepStorage.Properties"]/maxNumberStacks</xpath>
+								<value>
+									<maxNumberStacks>20</maxNumberStacks>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ThingDef[defName="VFE_MechanoidLiquidFreezer"]/comps/li[@Class="LWM.DeepStorage.Properties"]/maxTotalMass</xpath>
+								<value>
+									<maxTotalMass>1500</maxTotalMass>
+								</value>
+							</li>
+							</operations>
+						</match>
+					</li>
+				</operations>
+			</match>
+		</match>
+	</Operation>
+</Patch>

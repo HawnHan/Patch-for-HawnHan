@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/*[defName="Dragonian_Female" or defName="Dragonian_Male"]/alienRace/raceRestriction/whiteApparelList</xpath>
+				<success>Normal</success>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/*[defName="Dragonian_Female" or defName="Dragonian_Male"]/alienRace/raceRestriction</xpath>
+				<value>
+					<raceRestriction></raceRestriction>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Brain Implants and More (implants)!</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/HediffDef[defName="GlitterworldAChip"]/stages/li/capMods/li/setMax</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="GlitterworldAChip"]/stages/li/capMods/li/offset</xpath>
+					<value>
+						<offset>1.5</offset>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="GlitterworldSleepstopperChip"]/stages/li/restFallFactor</xpath>
+					<value>
+						<restFallFactor>0.23</restFallFactor>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

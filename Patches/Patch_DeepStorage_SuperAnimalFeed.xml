@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>LWM's Deep Storage</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="Mengya_SuperHay"]</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LWM_Hayloft"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+				<value>
+					<li>Mengya_SuperHay</li>
+					<li>Mengya_SuperKibble</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="Make5ChemfuelFromWood"]/workSpeedStat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[defName="Make5ChemfuelFromWood"]</xpath>
+			<value>
+				<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			</value>
+		</nomatch>
+	</Operation>
+</Patch>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>LWM's Deep Storage</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Arknights_明日方舟罗德岛实验室</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LWM_DeepStorage_Skip"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+				<value>
+					<li>Orirock</li>
+					<li>Polyester</li>
+					<li>Oriron</li>
+					<li>Aketon</li>
+					<li>Device</li>
+					<li>Grindstone</li>
+					<li>LoxicKohl</li>
+					<li>ManganeseOre</li>
+					<li>RMA70c</li>
+					<li>Suger</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+</Patch>

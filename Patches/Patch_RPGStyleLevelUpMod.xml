@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--为满足个人而对RPG Style Level Up Mod中为涉及到的部分进行修改-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RPG Style Level Up Mod</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!--深钻井速度!/建造成功率!/修理成功率!/破解速度!/心灵敏感度/冥想效力!/心灵熵消散率/全局学习系数!/心灵熵阈值/教化能力关联智力-->
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/StatDef[defName="DeepDrillingSpeed" or defName="ConstructSuccessChance" or defName="FixBrokenDownBuildingSuccessChance" or defName="HackingSpeed" or defName="PsychicSensitivity" or defName="MeditationFocusGain" or defName="PsychicEntropyRecoveryRate" or defName="GlobalLearningFactor" or defName="PsychicEntropyMax" or defName="ConversionPower"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/StatDef[defName="DeepDrillingSpeed" or defName="ConstructSuccessChance" or defName="FixBrokenDownBuildingSuccessChance" or defName="HackingSpeed" or defName="PsychicSensitivity" or defName="MeditationFocusGain" or defName="PsychicEntropyRecoveryRate" or defName="GlobalLearningFactor" or defName="PsychicEntropyMax" or defName="ConversionPower"]</xpath>
+					<value>
+						<parts>
+							<li Class="FP_RSLUM.StatPart_INT">
+								<weight>0.4</weight>
+							</li>
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/StatDef[defName="DeepDrillingSpeed" or defName="ConstructSuccessChance" or defName="FixBrokenDownBuildingSuccessChance" or defName="HackingSpeed" or defName="PsychicSensitivity" or defName="MeditationFocusGain" or defName="PsychicEntropyRecoveryRate" or defName="GlobalLearningFactor" or defName="PsychicEntropyMax" or defName="ConversionPower"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT">
+							<weight>0.4</weight>
+						</li>	
+					</value>
+				</match>
+			</li>
+			<!--挖矿效率/修剪速度/符文雕刻技能/远程闪避概率/进食速度关联灵巧-->
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/StatDef[defName="MiningYield" or defName="PruningSpeed" or defName="TM_RuneCarvingEfficiency" or defName="RangeDodgeChance" or defName="EatingSpeed" or defName="CleaningSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/StatDef[defName="MiningYield" or defName="PruningSpeed" or defName="TM_RuneCarvingEfficiency" or defName="RangeDodgeChance" or defName="EatingSpeed"]</xpath>
+					<value>
+						<parts>
+							<li Class="FP_RSLUM.StatPart_DEX">
+								<weight>0.4</weight>
+							</li>
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/StatDef[defName="MiningYield" or defName="PruningSpeed" or defName="TM_RuneCarvingEfficiency" or defName="RangeDodgeChance" or defName="EatingSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_DEX">
+							<weight>0.4</weight>
+						</li>
+					</value>
+				</match>
+			</li>
+			<!--熔炼速度/近战伤害系数!关联力量-->
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/StatDef[defName="SmeltingSpeed" or deName="MeleeStunChance" or defName="MeleeDamageFactor"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/StatDef[defName="SmeltingSpeed" or deName="MeleeStunChance" or defName="MeleeDamageFactor"]</xpath>
+					<value>
+						<parts>
+							<li Class="FP_RSLUM.StatPart_STR">
+								<weight>0.4</weight>
+							</li>
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/StatDef[defName="SmeltingSpeed" or defName="SuppressionPower" or deName="MeleeStunChance" or defName="MeleeDamageFactor"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_STR">
+							<weight>0.4</weight>
+						</li>
+					</value>
+				</match>
+			</li>
+			<!--补充燃料速度/远程暴击概率关联敏捷-->
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/StatDef[defName="RefuelingSpeed" or defName="RangeCriticalChance"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/StatDef[defName="RefuelingSpeed" or defName="RangeCriticalChance"]</xpath>
+					<value>
+						<parts>
+							<li Class="FP_RSLUM.StatPart_AGL">
+								<weight>0.4</weight>
+							</li>
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/StatDef[defName="RefuelingSpeed" or defName="RangeCriticalChance"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_AGL">
+							<weight>0.4</weight>
+						</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+    </match>
+  </Operation>
+</Patch>

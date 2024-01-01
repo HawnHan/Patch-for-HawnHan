@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--修改Vanilla Skills Expanded中的无兴趣学习率为0.75，同时修改偏長所影响的学习速率——0.8(该影响可在Vanilla Skills Expanded设置中更改，即时生效)，这是为了在前期跟work manager配合，不然真的太抽象了，一个该技能学习速率为0.35的但是技能为殖民地最高等级的人在work manager中不被分配工作，哈真是让人啼笑皆非，感谢Reduced VE Skills Nerf这个mod让我找到可以修改的方法（其实就是照抄，只是修改数值）-->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/VSE.Passions.PassionDef[defName="VSE_Critical"]/learnRateFactorOther</xpath>
+				<value>
+					<learnRateFactorOther>0.8</learnRateFactorOther>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/VSE.Passions.PassionDef[defName="None"]/learnRateFactor</xpath>
+				<value>
+					<learnRateFactor>0.75</learnRateFactor>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

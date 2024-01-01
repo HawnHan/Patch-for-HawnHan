@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ExternalEye</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="EEye_ExternalEye" or defName="EEye_ExternalEye_NightVision"]/recipeMaker</xpath>
+			<value>
+				<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			</value>
+		</match>
+	</Operation>
+</Patch>
