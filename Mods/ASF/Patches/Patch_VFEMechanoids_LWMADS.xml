@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>LWM's Adaptive Deep Storage</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VFE_MechanoidLiquidFreezer"]</xpath>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VFE_MechanoidLiquidFreezer"]/costList</xpath>
+						<value>
+							<costList>
+								<Steel>500</Steel>
+								<ComponentSpacer>20</ComponentSpacer>
+								<ComponentIndustrial>200</ComponentIndustrial>
+								<Neutroamine>400</Neutroamine>
+							</costList>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="VFE_MechanoidLiquidFreezer"]/building</xpath>
+						<value>
+							<maxItemsInCell>20</maxItemsInCell>
+						</value>
+					</li>
+				</operations>
+			</match>
+		</match>
+	</Operation>
+</Patch>

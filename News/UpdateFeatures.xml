@@ -5,6 +5,19 @@
     <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2975125935</linkUrl>
   </HugsLib.UpdateFeatureDef>
   <HugsLib.UpdateFeatureDef ParentName="PatchForHawnHan_UpdateFeatureBase">
+		<defName>PatchForHawnHan_24_11_30</defName>
+		<assemblyVersion>24.11.30</assemblyVersion>
+		<content>
+			新增：
+      - Patch_GeneAdjustAgent：为[基因进化药剂]Gene-adjustedagent添加ZeroTech-FalseLast-Binoic支持（原版写得是FindMod,如果使用的是mile大佬的复活版本，则会失效）；为[基因进化药剂]Gene-adjusted agent添加Vanilla Genetics Expanded支持
+      转换：
+      鉴于官方的柜子已经支持存放多个物品，个人已从LWM's Deep Storage转至由Adaptive Storage Framework作为前置的LWM's Adaptive Deep Storage，之前LWM's Deep Storage的补丁没有删除，目前通过LoadFolders.xml文件进行分开载入。
+      将为LWM's Deep Storage的补丁复制至以Adaptive Storage Framework为前置的LWM's Adaptive Deep Storage下，完全替换LWM's Deep Storage以获取更好的性能（字面上是这样的）
+      汉化：
+      丢入个人汉化的Perishable（易腐物品筛选条件）、Useless Filter(无用/有用物品筛选条件）以及Linkable Settings（链接设施配置）的文件。
+		</content>
+	</HugsLib.UpdateFeatureDef>
+  <HugsLib.UpdateFeatureDef ParentName="PatchForHawnHan_UpdateFeatureBase">
     <defName>PatchForHawnHan_23_12_30</defName>
     <assemblyVersion>23.12.30</assemblyVersion>
     <content>

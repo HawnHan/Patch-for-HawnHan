@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>LWM's Adaptive Deep Storage</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Psycasts Expanded</li>
+			</mods>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="ASF_Skip"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ASF_Skip"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+					<value>
+						<li>VPE_Eltex</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ASF_Skip"]/building/fixedStorageSettings/filter</xpath>
+					<value>
+						<thingDefs>
+							<li>VPE_Eltex</li>
+						</thingDefs>
+					</value>
+				</nomatch>
+			</match>
+		</match>
+	</Operation>
+</Patch>

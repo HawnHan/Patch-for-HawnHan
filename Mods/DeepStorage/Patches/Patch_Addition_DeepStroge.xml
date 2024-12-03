@@ -3,6 +3,7 @@
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Netrve's DeepStorage GUI</li>
+			<li>Netrve's DeepStorage GUI (Continued)</li>
 		</mods>
 		<match Class="PatchOperationConditional">
 			<xpath>Defs/ThingDef[defName="Shelf_1x1c_DeepStorage" or defName="MoneyShelf_1x1c_DeepStorage" or defName="HawnHan_DeepStorage_AbilityStorage" or defName="HawnHan_DeepStorage_PolarisMechSerumTraitreleaserStorage" or defName="HawnHan_DeepStorage_Statue" or defName="Hawn_LWM_WeaponsLocker" or defName="Hawn_LWM_Clothing_Rack" or defName="HawnHan_DeepStorage_BionicShelf_O" or defName="HawnHan_MicroDeepStorage_leather" or defName="HawnHan_DeepStorage_leather" or defName="HawnHan_DeepStorage_Magic" or defName="HawnHan_DeepStorage_BookShelf" or defName="HawnHan_DeepStorage_BionicShelf" or defName="Hawn_refrigerator"]/inspectorTabs/li[text()="DSGUI.DSGUI_TabModal" or defName="DrugShelf_DeepStorage"]</xpath>

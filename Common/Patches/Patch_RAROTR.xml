@@ -2,18 +2,18 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Rails and Roads of the Rim</li>
+			<li>Rails and Roads of the Rim (Continued)</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoadDef[defName="GlitterRoad"]/modExtensions/li[@Class="RoadsoftheRim.DefModExtension_RotR_RoadDef"]/costs/Stone</xpath>
+					<xpath>Defs/RoadDef[defName="GlitterRoad"]/modExtensions/li[@Class="RailsAndRoadsOfTheRim.DefModExtension_RotR_RoadDef"]/costs/Stone</xpath>
 					<value>
 						<Stone>900</Stone>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoadDef[defName="GlitterRoad"]/modExtensions/li[@Class="RoadsoftheRim.DefModExtension_RotR_RoadDef"]/costs/Steel</xpath>
+					<xpath>Defs/RoadDef[defName="GlitterRoad"]/modExtensions/li[@Class="RailsAndRoadsOfTheRim.DefModExtension_RotR_RoadDef"]/costs/Steel</xpath>
 					<value>
 						<Steel>3600</Steel>
 					</value>

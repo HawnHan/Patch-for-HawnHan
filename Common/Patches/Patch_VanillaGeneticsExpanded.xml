@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- 冬眠模块芯片-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="GR_HibernationModule"]/hediffClass</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/HediffDef[defName="GR_HibernationModule"]/hediffClass</xpath>
+			<value>
+				<hediffClass>Hediff_Implant</hediffClass>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="GR_HibernationModule"]</xpath>
+			<value>
+				<hediffClass>Hediff_Implant</hediffClass>
+			</value>
+		</nomatch>
+	</Operation>
+	<!-- 蛮熊肌肉组织-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="GR_BearMuscleTissue"]/hediffClass</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/HediffDef[defName="GR_BearMuscleTissue"]/hediffClass</xpath>
+			<value>
+				<hediffClass>Hediff_Implant</hediffClass>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="GR_BearMuscleTissue"]</xpath>
+			<value>
+				<hediffClass>Hediff_Implant</hediffClass>
+			</value>
+		</nomatch>
+	</Operation>
+	<!-- 雪牛肌肉组织-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="GR_MuffaloMuscles"]/hediffClass</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/HediffDef[defName="GR_MuffaloMuscles"]/hediffClass</xpath>
+			<value>
+				<hediffClass>Hediff_Implant</hediffClass>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="GR_MuffaloMuscles"]</xpath>
+			<value>
+				<hediffClass>Hediff_Implant</hediffClass>
+			</value>
+		</nomatch>
+	</Operation>
+</Patch>

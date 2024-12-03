@@ -21,15 +21,7 @@
 	<ThingDef ParentName="TM_BaseRangedMageWeapon" MayRequire="onyxae.dragonsdescent,torann.arimworldofmagic">
 		<defName>TM_DragonBow</defName>
 		<label>龙角弓</label>
-		<description>
-			由龙角制作的长弓。龙角被神圣化为减轻重量并通过将其浸泡在魔力伊特中软化，从而为龙角增添了令人惊讶的柔软感，进一步加强了附魔和奥术雕刻。用这把轻巧的弓进行攻击时如此的精准，就好像它自己会瞄准目标一样。由此弓射出的箭一如龙族强壮的冲撞，能极大程度的喝退敌人。
-
-			这种武器被附魔，并为训练有素的法师和战士提供额外的收益：
-			提升最大能量值: +35
-			提升能量回复速度: +15%
-			技能强度: +30%
-			技能冷却缩减: -15%
-		</description>
+		<description>由龙角制作的长弓。龙角被神圣化为减轻重量并通过将其浸泡在魔力伊特中软化，从而为龙角增添了令人惊讶的柔软感，进一步加强了附魔和奥术雕刻。用这把轻巧的弓进行攻击时如此的精准，就好像它自己会瞄准目标一样。由此弓射出的箭一如龙族强壮的冲撞，能极大程度的喝退敌人。\n\n这种武器被附魔，并为训练有素的法师和战士提供额外的收益：\n提升最大能量值:+35\n	提升能量回复速度:+15%\n技能强度:+30%\n技能冷却缩减:-15%</description>
 		<graphicData>
 			<texPath>Items/weapons/thrumbow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -124,9 +116,7 @@
 	<ThingDef ParentName="TM_BaseMeleeMageWeapon" MayRequire="onyxae.dragonsdescent,torann.arimworldofmagic">
 		<defName>TM_DragonAxe</defName>
 		<label>开天斧</label>
-		<description>
-			一个由龙角和魔法原石制成的握柄组合而成的斧子. 此握柄中存储着奥术能量并且会在开天斧被挥舞时转化为物理力量, 其强大的力量甚至可以一击将龙劈成两半. 此斧握柄上同样铭刻着神秘的符文来增强使用者的奥术能量。\n		\n这种武器被附魔，并为训练有素的法师和战士提供额外的收益：\n提升最大能量值: +25\n技能强度: +30%\n技能抗性: +45%\n劈裂冲击
-		</description>
+		<description>一个由龙角和魔法原石制成的握柄组合而成的斧子.此握柄中存储着奥术能量并且会在开天斧被挥舞时转化为物理力量,其强大的力量甚至可以一击将龙劈成两半.此斧握柄上同样铭刻着神秘的符文来增强使用者的奥术能量。\n\n这种武器被附魔，并为训练有素的法师和战士提供额外的收益：\n提升最大能量值:+25\n技能强度:+30%\n技能抗性:+45%\n劈裂冲击</description>
 		<graphicData>
 			<texPath>Items/weapons/thrumboaxe_etched_offset</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -221,9 +211,7 @@
 	<RecipeDef MayRequire="onyxae.dragonsdescent,torann.arimworldofmagic">
 		<defName>ArcaneForge_DragonAxe</defName>
 		<label>开天斧</label>
-		<description>
-			一个由龙角和魔法原石制成的握柄组合而成的斧子. 此握柄中存储着奥术能量并且会在开天斧被挥舞时转化为物理力量, 其强大的力量甚至可以一击将龙劈成两半. 此斧握柄上同样铭刻着神秘的符文来增强使用者的奥术能量。\n		\n这种武器被附魔，并为训练有素的法师和战士提供额外的收益：\n提升最大能量值: +25\n技能强度: +30%\n技能抗性: +45%\n劈裂冲击
-		</description>
+		<description>一个由龙角和魔法原石制成的握柄组合而成的斧子.此握柄中存储着奥术能量并且会在开天斧被挥舞时转化为物理力量,其强大的力量甚至可以一击将龙劈成两半.此斧握柄上同样铭刻着神秘的符文来增强使用者的奥术能量。\n\n这种武器被附魔，并为训练有素的法师和战士提供额外的收益：\n提升最大能量值:+25\n技能强度:+30%\n技能抗性:+45%\n劈裂冲击</description>
 		<jobString>锻造开天斧</jobString>
 		<!-- 	<researchPrerequisite>TechPlasteelCrafting</researchPrerequisite> -->
 		<workSpeedStat>ResearchSpeed</workSpeedStat>
@@ -297,9 +285,7 @@
 	<ThingDef ParentName="TM_BaseMeleeMageWeapon" MayRequire="onyxae.dragonsdescent,torann.arimworldofmagic">
 		<defName>TM_DragonSaber</defName>
 		<label>秘能刃</label>
-		<description>
-			一把锋利的刀锋被注入了大量神秘的能量。让它比金属刀轻，它的刃可以穿透所有的盔甲。许多刀锋高手都喜欢这种武器，因为它是为了速度和杀伤力而设计的。进一步的附魔也可以让使用者加速，在短时间内使他们的攻击率翻倍。\n这件武器是附魔的，为训练有素的法师和战士提供额外的收益：\n技能冷却时间: -18%\n伤害提升: +18%\n击中时急速 (40%)
-		</description>
+		<description>一把锋利的刀锋被注入了大量神秘的能量。让它比金属刀轻，它的刃可以穿透所有的盔甲。许多刀锋高手都喜欢这种武器，因为它是为了速度和杀伤力而设计的。进一步的附魔也可以让使用者加速，在短时间内使他们的攻击率翻倍。\n这件武器是附魔的，为训练有素的法师和战士提供额外的收益：\n技能冷却时间:-18%\n伤害提升:+18%\n击中时急速(40%)</description>
 		<graphicData>
 			<texPath>Items/weapons/thrumbo_saber_held</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -396,9 +382,7 @@
 	<RecipeDef MayRequire="onyxae.dragonsdescent,torann.arimworldofmagic">
 		<defName>ArcaneForge_DragonSaber</defName>
 		<label>秘能刃</label>
-		<description>
-			一把锋利的刀锋被注入了大量神秘的能量。让它比金属刀轻，它的刃可以穿透所有的盔甲。许多刀锋高手都喜欢这种武器，因为它是为了速度和杀伤力而设计的。进一步的附魔也可以让使用者加速，在短时间内使他们的攻击率翻倍。\n这件武器是附魔的，为训练有素的法师和战士提供额外的收益：\n技能冷却时间: -18%\n伤害提升: +18%\n击中时急速 (40%)
-		</description>
+		<description>一把锋利的刀锋被注入了大量神秘的能量。让它比金属刀轻，它的刃可以穿透所有的盔甲。许多刀锋高手都喜欢这种武器，因为它是为了速度和杀伤力而设计的。进一步的附魔也可以让使用者加速，在短时间内使他们的攻击率翻倍。\n这件武器是附魔的，为训练有素的法师和战士提供额外的收益：\n技能冷却时间:-18%\n伤害提升:+18%\n击中时急速(40%)</description>
 		<jobString>锻造秘能刃</jobString>
 		<!-- 	<researchPrerequisite>TechPlasteelCrafting</researchPrerequisite> -->
 		<workSpeedStat>ResearchSpeed</workSpeedStat>

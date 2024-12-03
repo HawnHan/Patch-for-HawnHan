@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Age Reversing Mech Serum</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="MechSerumYouth"]</xpath>
+			<value>
+				<costList>
+					<Steel>200</Steel>
+					<Plasteel>70</Plasteel>
+					<Jade>150</Jade>
+					<Gold>150</Gold>
+					<Silver>700</Silver>
+					<Plant_Healroot>10</Plant_Healroot>
+					<MedicineIndustrial>5</MedicineIndustrial>
+				</costList>
+				<recipeMaker>
+					<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+					<workSkill>Intellectual</workSkill>
+					<effectWorking>Cook</effectWorking>
+					<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+					<recipeUsers>
+						<li>FabricationBench</li>
+					</recipeUsers>
+					<workAmount>12000</workAmount>
+					<skillRequirements>
+						<Intellectual>15</Intellectual>
+						<Crafting>16</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>
+						<li>Fabrication</li>
+					</researchPrerequisite>
+				</recipeMaker>
+			</value>
+		</match>
+	</Operation>
+</Patch>

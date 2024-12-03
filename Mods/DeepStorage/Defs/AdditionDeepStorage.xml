@@ -445,9 +445,6 @@
 		<defName>HawnHan_DeepStorage_AbilityStorage</defName>
 		<label>神经训练器储柜</label>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsFurniture</li>
-		</thingCategories>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<tradeTags Inhert="false" />
 		<drawGUIOverlay>true</drawGUIOverlay>
@@ -508,9 +505,6 @@
 		<defName>HawnHan_DeepStorage_BionicShelf</defName>
 		<label>身体部件仓</label>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsFurniture</li>
-		</thingCategories>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<tradeTags Inhert="false" />
 		<drawGUIOverlay>true</drawGUIOverlay>
@@ -574,13 +568,10 @@
 		</building>
 		<description>个人需求制作的身体部件仓。可存放至多60个部件</description>
 	</ThingDef>
-	<ThingDef ParentName="LWM_DeepStorage" MayRequire="vanya.polarisbloc.corelab,lwm.deepstorage">
+	<ThingDef ParentName="LWM_DeepStorage" MayRequire="vanya.polarisbloc.corelab.tmp,lwm.deepstorage">
 		<defName>HawnHan_DeepStorage_PolarisMechSerumTraitreleaserStorage</defName>
 		<label>特性记忆储柜</label>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsFurniture</li>
-		</thingCategories>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<tradeTags Inhert="false" />
 		<drawGUIOverlay>true</drawGUIOverlay>
@@ -637,13 +628,10 @@
 		<staticSunShadowHeight>1</staticSunShadowHeight>
 		<description>个人需求制作的特性记忆储柜，可存放至多75个特性释放器及记忆棒</description>
 	</ThingDef>
-	<ThingDef ParentName="LWM_DeepStorage" MayRequire="vanillaexpanded.vbookse,lwm.deepstorage">
+	<!-- <ThingDef ParentName="LWM_DeepStorage" MayRequire="vanillaexpanded.vbookse,lwm.deepstorage">
 		<defName>HawnHan_DeepStorage_BookShelf</defName>
 		<label>深度书架</label>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsFurniture</li>
-		</thingCategories>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<tradeTags Inhert="false" />
 		<drawGUIOverlay>true</drawGUIOverlay>
@@ -702,7 +690,7 @@
 			</fixedStorageSettings>
 		</building>
 		<description>个人需求制作的书架。可存放至多一百本书</description>
-	</ThingDef>
+	</ThingDef> -->
 	<ThingDef ParentName="FurnitureWithQualityBase" MayRequire="lwm.deepstorage">
 		<defName>Shelf_1x1c_DeepStorage</defName>
 		<label>量存货架(1x1)</label>

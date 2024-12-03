@@ -10,9 +10,9 @@
 		<operations>
 			<!--深钻井速度!/建造成功率!/修理成功率!/破解速度!/心灵敏感度/冥想效力!/心灵熵消散率/全局学习系数!/心灵熵阈值/教化能力关联智力-->
 			<li Class="PatchOperationConditional">
-				<xpath>Defs/StatDef[defName="DeepDrillingSpeed" or defName="ConstructSuccessChance" or defName="FixBrokenDownBuildingSuccessChance" or defName="HackingSpeed" or defName="PsychicSensitivity" or defName="MeditationFocusGain" or defName="PsychicEntropyRecoveryRate" or defName="GlobalLearningFactor" or defName="PsychicEntropyMax" or defName="ConversionPower"]/parts</xpath>
+				<xpath>Defs/StatDef[defName="DeepDrillingSpeed" or defName="ConstructSuccessChance" or defName="FixBrokenDownBuildingSuccessChance" or defName="HackingSpeed" or defName="PsychicSensitivity" or defName="MeditationFocusGain" or defName="PsychicEntropyRecoveryRate" or defName="GlobalLearningFactor" or defName="PsychicEntropyMax" or defName="ConversionPower" or defName="ReadingSpeed"]/parts</xpath>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>Defs/StatDef[defName="DeepDrillingSpeed" or defName="ConstructSuccessChance" or defName="FixBrokenDownBuildingSuccessChance" or defName="HackingSpeed" or defName="PsychicSensitivity" or defName="MeditationFocusGain" or defName="PsychicEntropyRecoveryRate" or defName="GlobalLearningFactor" or defName="PsychicEntropyMax" or defName="ConversionPower"]</xpath>
+					<xpath>Defs/StatDef[defName="DeepDrillingSpeed" or defName="ConstructSuccessChance" or defName="FixBrokenDownBuildingSuccessChance" or defName="HackingSpeed" or defName="PsychicSensitivity" or defName="MeditationFocusGain" or defName="PsychicEntropyRecoveryRate" or defName="GlobalLearningFactor" or defName="PsychicEntropyMax" or defName="ConversionPower" or defName="ReadingSpeed"]</xpath>
 					<value>
 						<parts>
 							<li Class="FP_RSLUM.StatPart_INT">
@@ -22,7 +22,7 @@
 					</value>
 				</nomatch>
 				<match Class="PatchOperationAdd">
-					<xpath>Defs/StatDef[defName="DeepDrillingSpeed" or defName="ConstructSuccessChance" or defName="FixBrokenDownBuildingSuccessChance" or defName="HackingSpeed" or defName="PsychicSensitivity" or defName="MeditationFocusGain" or defName="PsychicEntropyRecoveryRate" or defName="GlobalLearningFactor" or defName="PsychicEntropyMax" or defName="ConversionPower"]/parts</xpath>
+					<xpath>Defs/StatDef[defName="DeepDrillingSpeed" or defName="ConstructSuccessChance" or defName="FixBrokenDownBuildingSuccessChance" or defName="HackingSpeed" or defName="PsychicSensitivity" or defName="MeditationFocusGain" or defName="PsychicEntropyRecoveryRate" or defName="GlobalLearningFactor" or defName="PsychicEntropyMax" or defName="ConversionPower" or defName="ReadingSpeed"]/parts</xpath>
 					<value>
 						<li Class="FP_RSLUM.StatPart_INT">
 							<weight>0.4</weight>

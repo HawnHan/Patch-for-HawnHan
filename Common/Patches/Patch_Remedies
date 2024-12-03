@@ -3,6 +3,7 @@
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Remedies</li>
+			<li>Remedies (Continued)</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
@@ -16,16 +17,13 @@
 						</costList>
 					</value>
 				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/HediffDef[defName="FF_EctostasisHigh"]/stages/li/capMods/li/setMax</xpath>
+				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/HediffDef[defName="FF_EctostasisHigh"]/stages/li/capMods/li/offset</xpath>
 					<value>
-						<offset>0.2</offset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/HediffDef[defName="FF_EctostasisHigh"]/stages/li/capMods/li/setMax</xpath>
-					<value>
-						<setMax>5</setMax>
+						<offset>0.01</offset>
 					</value>
 				</li>
 			</operations>

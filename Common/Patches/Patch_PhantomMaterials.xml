@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--添加工作速度影响制作速度-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="Make_PhantomAlloy" or defName="Make_PhantomWeave"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[defName="Make_PhantomAlloy" or defName="Make_PhantomWeave"]/workSpeedStat</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="Make_PhantomAlloy" or defName="Make_PhantomWeave"]</xpath>
+				<value>
+					<workSpeedStat>SmeltingSpeed</workSpeedStat>
+				</value>
+			</nomatch>
+		</match>
+	</Operation>
+</Patch>

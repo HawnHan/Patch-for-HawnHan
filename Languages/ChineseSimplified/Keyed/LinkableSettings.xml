@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LiSe.settings>设置</LiSe.settings>
+  <LiSe.resetall.label>重置自定义设定</LiSe.resetall.label>
+  <LiSe.resetall.tooltip>重置所有设定</LiSe.resetall.tooltip>
+  <LiSe.resetall.button>重置Mod</LiSe.resetall.button>
+  <LiSe.reset.button>重置</LiSe.reset.button>
+  <LiSe.search>搜索</LiSe.search>
+  <LiSe.resetall.confirm>移除所有更改并恢复为原版设定</LiSe.resetall.confirm>
+  <LiSe.logging.label>启用详尽日志</LiSe.logging.label>
+  <LiSe.logging.tooltip>查看详尽日志，以定位报错信息</LiSe.logging.tooltip>
+  <LiSe.version.label>Mod当前版本: {0}</LiSe.version.label>
+  <LiSe.error.thing>错误，无法在数据库中找到{0}</LiSe.error.thing>
+  <LiSe.linktype.label>链接方式</LiSe.linktype.label>
+  <LiSe.linktype.description>链接至设施的方式</LiSe.linktype.description>
+  <LiSe.linkrange.label>范围: {0}</LiSe.linkrange.label>
+  <LiSe.linkrange.description>上述“链接范围”/“同一房间”的范围设定</LiSe.linkrange.description>
+  <LiSe.linkamount.label>限数: {0}</LiSe.linkamount.label>
+  <LiSe.linkamount.description>可链接至同一设施的数量</LiSe.linkamount.description>
+  <LiSe.range.label>链接范围</LiSe.range.label>
+  <LiSe.range.description>符合下方范围设定时链接</LiSe.range.description>
+  <LiSe.room.label>同一房间</LiSe.room.label>
+  <LiSe.room.description>与设施处于同一房间时链接，若设施位于室外，则需满足下方范围设定</LiSe.room.description>
+  <LiSe.ignorewalls.label>跨墙链接</LiSe.ignorewalls.label>
+  <LiSe.ignorewalls.description>满足范围要求时忽略与设施间的障碍物</LiSe.ignorewalls.description>
+  <LiSe.mustBePlacedAdjacent.label>毗邻</LiSe.mustBePlacedAdjacent.label>
+  <LiSe.mustBePlacedAdjacent.description>与设施相邻时链接</LiSe.mustBePlacedAdjacent.description>
+  <LiSe.mustBePlacedAdjacentCardinalToBedHead.label>床头</LiSe.mustBePlacedAdjacentCardinalToBedHead.label>
+  <LiSe.mustBePlacedAdjacentCardinalToBedHead.description>置于床头时链接</LiSe.mustBePlacedAdjacentCardinalToBedHead.description>
+  <LiSe.mustBePlacedAdjacentCardinalToAndFacingBedHead.label>正对床头</LiSe.mustBePlacedAdjacentCardinalToAndFacingBedHead.label>
+  <LiSe.mustBePlacedAdjacentCardinalToAndFacingBedHead.description>仅当正对床头时链接</LiSe.mustBePlacedAdjacentCardinalToAndFacingBedHead.description>
+</LanguageData>

@@ -322,6 +322,108 @@
 						<li>VFE_ComponentFabricationBench</li>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<RecipeDef ParentName="MakeBodyPartLingFPSBase">
+							<defName>MakeLingFPS_Blank_I</defName>
+							<label>制作素白骨骼</label>
+							<descriptionHyperlinks>
+							<ThingDef>LingFPS_Blank_I</ThingDef>
+							</descriptionHyperlinks>
+							<description>制作素白骨骼，这是为了吃到Quality Bionic的加成而做的，故而工作量与耗材有些微的上涨</description>
+							<jobString>制作素白骨骼中</jobString>
+							<workAmount>12500</workAmount>
+							<ingredients>
+							<li>
+								<filter>
+								<thingDefs>
+									<li>ComponentSpacer</li>
+								</thingDefs>
+								</filter>
+								<count>6</count>
+							</li>
+							<li>
+								<filter>
+								<thingDefs>
+									<li>Plasteel</li>
+								</thingDefs>
+								</filter>
+								<count>30</count>
+							</li>
+							<li>
+								<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+								</filter>
+								<count>6</count>
+							</li>
+							</ingredients>
+							<fixedIngredientFilter>
+							<thingDefs>
+								<li>ComponentSpacer</li>
+								<li>Plasteel</li>
+								<li>ComponentIndustrial</li>
+							</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							<LingFPS_Blank_I>1</LingFPS_Blank_I>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<RecipeDef ParentName="MakeBodyPartLingFPSBase">
+							<defName>MakeLingFPS_Blank_II</defName>
+							<label>制作素白器官</label>
+							<descriptionHyperlinks>
+							<ThingDef>LingFPS_Blank_II</ThingDef>
+							</descriptionHyperlinks>
+							<description>制作素白器官，这是为了吃到Quality Bionic的加成而做的，故而工作量与耗材有些微的上涨</description>
+							<jobString>制作素白器官中</jobString>
+							<workAmount>12500</workAmount>
+							<ingredients>
+							<li>
+								<filter>
+								<thingDefs>
+									<li>ComponentSpacer</li>
+								</thingDefs>
+								</filter>
+								<count>6</count>
+							</li>
+							<li>
+								<filter>
+								<thingDefs>
+									<li>Plasteel</li>
+								</thingDefs>
+								</filter>
+								<count>30</count>
+							</li>
+							<li>
+								<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+								</filter>
+								<count>6</count>
+							</li>
+							</ingredients>
+							<fixedIngredientFilter>
+							<thingDefs>
+								<li>ComponentSpacer</li>
+								<li>Plasteel</li>
+								<li>ComponentIndustrial</li>
+							</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<LingFPS_Blank_II>1</LingFPS_Blank_II>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
