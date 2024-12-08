@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Replimat</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Better Survival Meals (Continued)</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="ReplimatComputer"]/comps/li/batchReplicableSurvivalMeals</xpath>
+				<value>
+					<li MayRequire="Ludeon.RimWorld.Ideology">MealSurvivalPack_Veg</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">MealSurvivalPack_Meat</li>
+					<li>MealSurvivalPackFine</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">MealSurvivalPackFine_Veg</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">MealSurvivalPackFine_Meat</li>
+					<li>MealSurvivalPackLavish</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">MealSurvivalPackLavish_Veg</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">MealSurvivalPackLavish_Meat</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+</Patch>

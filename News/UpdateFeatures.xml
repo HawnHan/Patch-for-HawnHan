@@ -5,6 +5,14 @@
     <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2975125935</linkUrl>
   </HugsLib.UpdateFeatureDef>
   <HugsLib.UpdateFeatureDef ParentName="PatchForHawnHan_UpdateFeatureBase">
+		<defName>PatchForHawnHan_24_12_05</defName>
+		<assemblyVersion>24.12.05</assemblyVersion>
+		<content>
+			新增：
+      - Patch_Replimat_BetterSurvivalMeals:为Replimat添加可以复制Better Survival Meals (Continued)里面的包装食物，这样就不用必须带远征冰箱了
+		</content>
+	</HugsLib.UpdateFeatureDef>
+  <HugsLib.UpdateFeatureDef ParentName="PatchForHawnHan_UpdateFeatureBase">
 		<defName>PatchForHawnHan_24_11_30</defName>
 		<assemblyVersion>24.11.30</assemblyVersion>
 		<content>
